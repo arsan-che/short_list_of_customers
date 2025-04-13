@@ -20,3 +20,15 @@ customer_data = [
 
 # Print the initial customer data
 print(customer_data)
+
+# Update Chani's shipping preference to False (regular shipping)
+customer_data[2][2] = False
+
+# Remove Ben's shipping preference as he is unsure
+customer_data[1].remove(False)
+
+# Combine existing customer data with new customers' data
+customer_data_final = customer_data + [["Amit", "Large", True], ["Karim", "X-Large", False]]
+
+# Print the final customer data
+print(customer_data_final)
